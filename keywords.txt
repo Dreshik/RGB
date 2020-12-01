@@ -1,0 +1,39 @@
+#######################################
+
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+LED	KEYWORD1
+DreshikRGB	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setRGB	KEYWORD2
+moveTo	KEYWORD2
+tick	KEYWORD2
+moveWheel	KEYWORD2
+setWheel	KEYWORD2
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+BLACK	LITERAL1
+GRAY 	LITERAL1
+SILVER	LITERAL1
+WHITE	LITERAL1
+FUCHSIA	LITERAL1
+PURPLE	LITERAL1
+RED	LITERAL1
+MAROON	LITERAL1
+YELLOW	LITERAL1
+OLIVE	LITERAL1
+LIME	LITERAL1
+GREEN	LITERAL1
+AQUA	LITERAL1
+TEAL	LITERAL1
+BLUE	LITERAL1
+NAVY	LITERAL1
