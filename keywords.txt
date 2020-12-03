@@ -17,6 +17,7 @@ moveTo	KEYWORD2
 tick	KEYWORD2
 moveWheel	KEYWORD2
 setWheel	KEYWORD2
+setWheelTime	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################

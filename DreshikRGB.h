@@ -28,6 +28,7 @@ public:
   void moveTo(uint32_t _color, unsigned int _perTime);
   void moveWheel();
   void setWheel(unsigned int _color);
+  void setWheelTime(unsigned int _wheelTime);
 private:
   float R,G,B;
   uint8_t moveR, moveG, moveB;
@@ -37,6 +38,7 @@ private:
   unsigned long workTimeMS; // время работы ленты
   unsigned long preTimeMS; // время последнего события
   unsigned int wheel; // Положение на кольце
+  unsigned int wheelTime; // Период смены положения на кольце
   float alphs[3]; // Коэффициенты для плавного перехода процедуры moveTo
   
   

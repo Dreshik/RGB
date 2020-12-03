@@ -11,6 +11,7 @@ LED::LED(uint8_t _pinR, uint8_t _pinG, uint8_t _pinB) { // конструкто�
   workState = 1;
   mode = 0;
   wheel = 0;
+  wheelTime = 100;
   R = 0;
   G = 0;
   B = 0;
@@ -50,7 +51,7 @@ LED::tick(unsigned long _workTimeMS)
       if ( (alphs[0] == 0) && (alphs[1] == 0) && (alphs[2] == 0) ) // Если все альфы = 0 => переход закочен
       mode = 0;
     }
-    else if ( (mode == 2) & ((_workTimeMS - preTimeMS) > 100) ) // движение по кольцу
+    else if ( (mode == 2) & ((_workTimeMS - preTimeMS) > wheelTime) ) // движение по кольцу
     {
       if (wheel++ > 1530)
         wheel = 0;
@@ -134,4 +135,8 @@ void LED::setWheel(unsigned int _color)
 void LED::moveWheel()
 {
   mode = 2;
+}
+void LED::setWheelTime(unsigned int _wheelTime)
+{
+  wheelTime = _wheelTime;
 }
